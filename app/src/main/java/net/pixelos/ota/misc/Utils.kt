@@ -141,7 +141,7 @@ object Utils {
         val device: String = SystemProperties.get(Constants.PROP_DEVICE)
         val serverUrl: String = context.getString(R.string.updater_server_url)
 
-        return serverUrl.replace("{version}", buildVersion).replace("{device}", device)
+        return serverUrl.replace("{device}", device)
     }
 
     @JvmStatic
@@ -150,7 +150,7 @@ object Utils {
         val device: String = SystemProperties.get(Constants.PROP_DEVICE)
         val changelogUrl: String = context.getString(R.string.changelog_url)
 
-        return changelogUrl.replace("{version}", buildVersion).replace("{device}", device)
+        return changelogUrl.replace("{device}", device)
     }
 
     @JvmStatic
@@ -158,7 +158,7 @@ object Utils {
         val buildVersion: String = SystemProperties.get(Constants.PROP_BUILD_VERSION)
         val certifiedPropsUrl: String = context.getString(R.string.certified_prop_url)
 
-        return certifiedPropsUrl.replace("{version}", buildVersion)
+        return certifiedPropsUrl
     }
 
     @JvmStatic
